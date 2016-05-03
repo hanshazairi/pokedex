@@ -9,17 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var pokemon = [Pokemon]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        parsePokemonCSV()
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PokemonCell", forIndexPath: indexPath) as? PokemonCell {
-            let pokemon = Pokemon(name: "Test", id: indexPath.row)
-            cell.configureCell(pokemon)
+            let newPokemon = pokemon[indexPath.row]
+            cell.configureCell(newPokemon)
             
             return cell
             
@@ -33,7 +37,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 721
+        return pokemon.count
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -44,8 +48,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return CGSizeMake(105, 105)
     }
     
-    
-    
-    
+    func parsePokemonCSV() {
+        let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")!
+        
+        do {
+            let csv = try CSV(contentsOfURL: path)
+            let rows = csv.rows
+            
+            for row in rows {
+                let id = Int(row["id"]!)!
+                let name = row["identifier"]!
+                let newPokemon = Pokemon(name: name, id: id)
+                pokemon.append(newPokemon)
+            }
+            
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+    }
 }
 

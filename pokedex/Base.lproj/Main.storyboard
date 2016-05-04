@@ -3,8 +3,31 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="pokemonfont.ttf">
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+            <string>PKMN-RBYGSC</string>
+        </mutableArray>
         <mutableArray key="pokemonsolid.ttf">
             <string>PokemonSolidNormal</string>
         </mutableArray>
@@ -84,7 +107,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="ndc-MM-bNr"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="10"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -162,16 +185,287 @@
                     <view key="view" contentMode="scaleToFill" id="Gs7-KR-Uvv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsy-vT-ZJX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ua0-fK-83F">
+                                        <rect key="frame" x="8" y="32" width="31" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ua0-fK-83F" secondAttribute="height" multiplier="20:13" id="Go6-SN-2eO"/>
+                                            <constraint firstAttribute="height" constant="20" id="b1l-Sg-S4q"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="MSu-p9-iBo" eventType="touchUpInside" id="LDh-Jf-lho"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2K-WA-LPl">
+                                        <rect key="frame" x="237" y="20" width="127" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wid-L1-E45"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="z2K-WA-LPl" secondAttribute="bottom" id="7Al-bb-lGv"/>
+                                    <constraint firstItem="Ua0-fK-83F" firstAttribute="leading" secondItem="Dsy-vT-ZJX" secondAttribute="leading" constant="8" id="9Fe-wn-e8H"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ua0-fK-83F" secondAttribute="bottom" constant="8" id="IWt-kr-B6I"/>
+                                    <constraint firstAttribute="height" constant="60" id="oKt-nP-TvH"/>
+                                    <constraint firstItem="z2K-WA-LPl" firstAttribute="centerX" secondItem="Dsy-vT-ZJX" secondAttribute="centerX" id="odM-3Y-jQN"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q2k-aH-f5p">
+                                <rect key="frame" x="20" y="82" width="560" height="397"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoy-l6-NV7">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YOj-8X-Ulk">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="UW1-zW-dOv"/>
+                                                    <constraint firstAttribute="width" constant="100" id="vjg-KZ-pZG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="OK0-Kv-kOx">
+                                                <rect key="frame" x="100" y="0.0" width="460" height="100"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZGl-zH-UKc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="33"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHR-du-ZUu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="33"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grass/Poison" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVB-Zq-uAz">
+                                                                <rect key="frame" x="68" y="0.0" width="154" height="33"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ou5-bY-NEr">
+                                                        <rect key="frame" x="0.0" y="33" width="99" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSG-CB-bGR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="34"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuf-Ur-Y0F">
+                                                                <rect key="frame" x="83" y="0.0" width="16" height="34"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zwv-pk-7pv">
+                                                        <rect key="frame" x="0.0" y="67" width="114" height="33"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3Y-Px-FsC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="33"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heO-id-iL8">
+                                                                <rect key="frame" x="83" y="0.0" width="31" height="33"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="l5m-QV-JzR"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-y3-fMl">
+                                        <rect key="frame" x="0.0" y="120" width="560" height="1"/>
+                                        <color key="backgroundColor" red="1" green="0.34509804844856262" blue="0.3333333432674408" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="pqq-pa-VxP"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4B3-qI-evS">
+                                        <rect key="frame" x="0.0" y="141" width="560" height="235"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WhS-e4-Q6b">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="65"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ABa-BF-OWF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="65"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HP:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4I-go-N48">
+                                                                <rect key="frame" x="0.0" y="0.0" width="37" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="45" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ys-8D-Rhi">
+                                                                <rect key="frame" x="249" y="0.0" width="31" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IIt-XC-WMe">
+                                                        <rect key="frame" x="280" y="0.0" width="280" height="65"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speed:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKY-24-gsY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="45" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwl-24-SFh">
+                                                                <rect key="frame" x="249" y="0.0" width="31" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAk-oQ-tn1">
+                                                <rect key="frame" x="0.0" y="85" width="560" height="65"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tfE-Tv-n87">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="65"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eou-qv-ur1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="84" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="49" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpn-cI-8Ds">
+                                                                <rect key="frame" x="249" y="0.0" width="31" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rMK-St-BBS">
+                                                        <rect key="frame" x="280" y="0.0" width="280" height="65"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Defense:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jak-MN-bYj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="99" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="49" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-T3-sBm">
+                                                                <rect key="frame" x="249" y="0.0" width="31" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nv9-Yn-ND9">
+                                                <rect key="frame" x="0.0" y="170" width="560" height="65"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yG5-sp-KR7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="65"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SP. Attack:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BI-2L-BNt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="124" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="65" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sl-1Z-2km">
+                                                                <rect key="frame" x="249" y="0.0" width="31" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Fc-ga-8Md">
+                                                        <rect key="frame" x="280" y="0.0" width="280" height="65"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SP. Defense:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8A-DG-yrT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="65" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVM-b6-QUT">
+                                                                <rect key="frame" x="249" y="0.0" width="31" height="65"/>
+                                                                <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-pg-Hec">
+                                        <rect key="frame" x="0.0" y="396" width="560" height="1"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="9WA-SA-Dv0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scb-qY-PSn">
+                                <rect key="frame" x="0.0" y="479" width="600" height="121"/>
+                                <color key="backgroundColor" red="1" green="0.34509804844856262" blue="0.3333333432674408" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="vYb-b9-Hqj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dsy-vT-ZJX" secondAttribute="trailing" id="2xa-ba-Ozr"/>
+                            <constraint firstAttribute="trailing" secondItem="Q2k-aH-f5p" secondAttribute="trailing" constant="20" id="3Vj-gc-ab9"/>
+                            <constraint firstItem="Q2k-aH-f5p" firstAttribute="leading" secondItem="Gs7-KR-Uvv" secondAttribute="leading" constant="20" id="GLG-nX-Fcy"/>
+                            <constraint firstItem="scb-qY-PSn" firstAttribute="leading" secondItem="Gs7-KR-Uvv" secondAttribute="leading" id="JLg-Oa-jPB"/>
+                            <constraint firstItem="scb-qY-PSn" firstAttribute="top" secondItem="Q2k-aH-f5p" secondAttribute="bottom" id="Qzd-jV-zUU"/>
+                            <constraint firstItem="Dsy-vT-ZJX" firstAttribute="top" secondItem="Gs7-KR-Uvv" secondAttribute="top" id="YRY-h6-VMW"/>
+                            <constraint firstItem="mAW-mS-BJ5" firstAttribute="top" secondItem="scb-qY-PSn" secondAttribute="bottom" id="cuN-ml-qIV"/>
+                            <constraint firstAttribute="trailing" secondItem="scb-qY-PSn" secondAttribute="trailing" id="hAm-bB-Zz6"/>
+                            <constraint firstItem="Dsy-vT-ZJX" firstAttribute="leading" secondItem="Gs7-KR-Uvv" secondAttribute="leading" id="lbD-ee-2Pf"/>
+                            <constraint firstItem="Q2k-aH-f5p" firstAttribute="top" secondItem="Dsy-vT-ZJX" secondAttribute="bottom" constant="22" id="lks-hF-fMr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pokemonImage" destination="YOj-8X-Ulk" id="w1l-kd-jls"/>
+                        <outlet property="pokemonNameLabel" destination="z2K-WA-LPl" id="eA8-hU-QEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfr-U2-dGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="344"/>
+            <point key="canvasLocation" x="914" y="344"/>
         </scene>
     </scenes>
     <resources>
         <image name="193" width="120" height="120"/>
+        <image name="back" width="100" height="67"/>
         <image name="background" width="1920" height="1200"/>
         <image name="music" width="100" height="100"/>
     </resources>

@@ -10,17 +10,17 @@ import Foundation
 
 class Pokemon {
     private var _name: String!
-    private var _id: Int!
+    private var _id: String!
     
     var name: String! {
         return _name
     }
     
-    var id: Int! {
+    var id: String! {
         return _id
     }
     
-    init (name: String, id: Int) {
+    init (name: String, id: String) {
         _name = name
         _id = id
     }

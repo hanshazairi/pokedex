@@ -109,8 +109,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
-    
-    
     func parsePokemonCSV() {
         let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")!
         
@@ -120,7 +118,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let rows = csv.rows
             
             for row in rows {
-                let id = Int(row["id"]!)!
+                let id = row["id"]!
                 let name = row["identifier"]!
                 let newPokemon = Pokemon(name: name, id: id)
                 pokemon.append(newPokemon)

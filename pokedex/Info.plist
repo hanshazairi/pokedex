@@ -46,6 +46,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>pokemonsolid.ttf</string>
+		<string>pokemonfont.ttf</string>
 	</array>
 </dict>
 </plist>

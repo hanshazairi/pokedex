@@ -25,6 +25,4 @@ class PokemonCell: UICollectionViewCell {
         pokemonName.text = self.pokemon.name.capitalizedString
         pokemonImage.image = UIImage(named: self.pokemon.id)
     }
-    
-    
 }

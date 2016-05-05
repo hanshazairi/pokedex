@@ -154,8 +154,5 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             sender.alpha = 1.0
         }
     }
-    
-    
-    
 }
 

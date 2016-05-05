@@ -13,6 +13,15 @@ class PokemonDetailsViewController: UIViewController, UICollectionViewDelegate, 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pokemonNameLabel: UILabel!
     @IBOutlet weak var pokemonImage: UIImageView!
+    @IBOutlet weak var pokemonType: UILabel!
+    @IBOutlet weak var pokemonHeight: UILabel!
+    @IBOutlet weak var pokemonWeight: UILabel!
+    @IBOutlet weak var pokemonHP: UILabel!
+    @IBOutlet weak var pokemonSpeed: UILabel!
+    @IBOutlet weak var pokemonAttack: UILabel!
+    @IBOutlet weak var pokemonDefense: UILabel!
+    @IBOutlet weak var pokemonSPAttack: UILabel!
+    @IBOutlet weak var pokemonSPDefense: UILabel!
     
     var pokemon: Pokemon!
     var evolutionPokemon = [Pokemon]()
@@ -61,7 +70,5 @@ class PokemonDetailsViewController: UIViewController, UICollectionViewDelegate, 
     
     @IBAction func backButtonPressed(sender: UIButton!) {
         dismissViewControllerAnimated(true, completion: nil)
-        
     }
-    
 }

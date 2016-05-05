@@ -231,7 +231,7 @@
                                     <constraint firstItem="q5T-3R-lBf" firstAttribute="centerX" secondItem="Dsy-vT-ZJX" secondAttribute="centerX" id="u3f-xh-sjy"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Q2k-aH-f5p">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Q2k-aH-f5p">
                                 <rect key="frame" x="20" y="80" width="560" height="500"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aoy-l6-NV7">
@@ -248,6 +248,9 @@
                                                         <exclude reference="jnF-AB-NTr"/>
                                                         <exclude reference="vFH-dR-lrq"/>
                                                     </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="132" height="132"/>
                                                 </variation>
                                                 <variation key="heightClass=regular">
                                                     <mask key="constraints">
@@ -290,17 +293,26 @@
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="44"/>
+                                                                </variation>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuf-Ur-Y0F">
                                                                 <rect key="frame" x="83" y="0.0" width="16" height="108"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="83" y="0.0" width="16" height="44"/>
+                                                                </variation>
                                                                 <variation key="heightClass=regular" misplaced="YES">
                                                                     <rect key="frame" x="83" y="0.0" width="16" height="35"/>
                                                                 </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="44" width="99" height="44"/>
+                                                        </variation>
                                                         <variation key="heightClass=regular" misplaced="YES">
                                                             <rect key="frame" x="0.0" y="35" width="99" height="35"/>
                                                         </variation>
@@ -327,6 +339,9 @@
                                                         <constraints>
                                                             <constraint firstItem="h3Y-Px-FsC" firstAttribute="leading" secondItem="Zwv-pk-7pv" secondAttribute="leading" id="b14-bE-zHT"/>
                                                         </constraints>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="88" width="99" height="44"/>
+                                                        </variation>
                                                         <variation key="heightClass=regular" misplaced="YES">
                                                             <rect key="frame" x="0.0" y="70" width="99" height="35"/>
                                                         </variation>
@@ -336,6 +351,9 @@
                                                     <constraint firstItem="eHR-du-ZUu" firstAttribute="trailing" secondItem="h3Y-Px-FsC" secondAttribute="trailing" id="HES-6X-MXX"/>
                                                     <constraint firstItem="DSG-CB-bGR" firstAttribute="trailing" secondItem="h3Y-Px-FsC" secondAttribute="trailing" id="Ot6-5C-eLM"/>
                                                 </constraints>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="140" y="0.0" width="420" height="132"/>
+                                                </variation>
                                             </stackView>
                                         </subviews>
                                         <constraints>
@@ -346,7 +364,8 @@
                                                 <exclude reference="x6J-b9-Kx4"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=compact">
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="132"/>
                                             <mask key="constraints">
                                                 <include reference="x6J-b9-Kx4"/>
                                             </mask>
@@ -358,6 +377,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="pqq-pa-VxP"/>
                                         </constraints>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="140" width="560" height="12"/>
+                                        </variation>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4B3-qI-evS">
                                         <rect key="frame" x="0.0" y="339" width="560" height="152"/>
@@ -376,26 +398,17 @@
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=compact" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="37" height="46"/>
-                                                                </variation>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ys-8D-Rhi">
                                                                 <rect key="frame" x="37" y="0.0" width="243" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=compact" misplaced="YES">
-                                                                    <rect key="frame" x="37" y="0.0" width="239" height="46"/>
-                                                                </variation>
                                                                 <variation key="heightClass=regular" misplaced="YES">
                                                                     <rect key="frame" x="37" y="0.0" width="16" height="95"/>
                                                                 </variation>
                                                             </label>
                                                         </subviews>
-                                                        <variation key="heightClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="276" height="46"/>
-                                                        </variation>
                                                         <variation key="heightClass=regular" misplaced="YES">
                                                             <rect key="frame" x="254" y="0.0" width="53" height="95"/>
                                                         </variation>
@@ -411,26 +424,17 @@
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=compact" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="46"/>
-                                                                </variation>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwl-24-SFh">
                                                                 <rect key="frame" x="75" y="0.0" width="205" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=compact" misplaced="YES">
-                                                                    <rect key="frame" x="75" y="0.0" width="201" height="46"/>
-                                                                </variation>
                                                                 <variation key="heightClass=regular" misplaced="YES">
                                                                     <rect key="frame" x="75" y="0.0" width="16" height="95"/>
                                                                 </variation>
                                                             </label>
                                                         </subviews>
-                                                        <variation key="heightClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="284" y="0.0" width="276" height="46"/>
-                                                        </variation>
                                                         <variation key="heightClass=regular" misplaced="YES">
                                                             <rect key="frame" x="235" y="95" width="91" height="95"/>
                                                         </variation>
@@ -453,17 +457,26 @@
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="84" height="44"/>
+                                                                </variation>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpn-cI-8Ds">
                                                                 <rect key="frame" x="84" y="0.0" width="196" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="84" y="0.0" width="192" height="44"/>
+                                                                </variation>
                                                                 <variation key="heightClass=regular" misplaced="YES">
                                                                     <rect key="frame" x="84" y="0.0" width="16" height="95"/>
                                                                 </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="276" height="44"/>
+                                                        </variation>
                                                         <variation key="heightClass=regular" misplaced="YES">
                                                             <rect key="frame" x="230" y="0.0" width="100" height="95"/>
                                                         </variation>
@@ -479,23 +492,34 @@
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="44"/>
+                                                                </variation>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-T3-sBm">
                                                                 <rect key="frame" x="99" y="0.0" width="181" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="99" y="0.0" width="177" height="44"/>
+                                                                </variation>
                                                                 <variation key="heightClass=regular" misplaced="YES">
                                                                     <rect key="frame" x="99" y="0.0" width="16" height="94"/>
                                                                 </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="284" y="0.0" width="276" height="44"/>
+                                                        </variation>
                                                         <variation key="heightClass=regular" misplaced="YES">
                                                             <rect key="frame" x="223" y="95" width="115" height="94"/>
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
-                                                <variation key="heightClass=compact" spacing="8"/>
+                                                <variation key="heightClass=compact" misplaced="YES" spacing="8">
+                                                    <rect key="frame" x="0.0" y="44" width="560" height="44"/>
+                                                </variation>
                                                 <variation key="heightClass=regular" axis="vertical" spacing="0.0"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nv9-Yn-ND9">
@@ -554,10 +578,15 @@
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
-                                                <variation key="heightClass=compact" spacing="8"/>
+                                                <variation key="heightClass=compact" misplaced="YES" spacing="8">
+                                                    <rect key="frame" x="0.0" y="88" width="560" height="44"/>
+                                                </variation>
                                                 <variation key="heightClass=regular" axis="vertical" spacing="0.0"/>
                                             </stackView>
                                         </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="160" width="560" height="132"/>
+                                        </variation>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-pg-Hec">
                                         <rect key="frame" x="0.0" y="499" width="560" height="1"/>
@@ -565,6 +594,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="9WA-SA-Dv0"/>
                                         </constraints>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="300" width="560" height="0.0"/>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>

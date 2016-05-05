@@ -8,9 +8,8 @@
 
 import UIKit
 
-class PokemonDetailsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class PokemonDetailsViewController: UIViewController {
     
-    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pokemonID: UILabel!
     @IBOutlet weak var pokemonName: UILabel!
     @IBOutlet weak var pokemonImage: UIImageView!
@@ -25,7 +24,6 @@ class PokemonDetailsViewController: UIViewController, UICollectionViewDelegate, 
     @IBOutlet weak var pokemonSPDefense: UILabel!
     
     var pokemon: Pokemon!
-    var evolutionPokemon = [Pokemon]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,40 +44,6 @@ class PokemonDetailsViewController: UIViewController, UICollectionViewDelegate, 
         pokemon.downloadPokemonDetails {
             self.updatePokemonDetails()
         }
-        
-        evolutionPokemon.append(Pokemon(name: "Charmander", id: "4"))
-        evolutionPokemon.append(Pokemon(name: "Charmeleon", id: "5"))
-        evolutionPokemon.append(Pokemon(name: "Charizard", id: "6"))
-    }
-    
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        
-        return 1
-    }
-    
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return evolutionPokemon.count
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
-        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PokemonCell", forIndexPath: indexPath) as? PokemonCell {
-            
-            let newEvolutionPokemon: Pokemon!
-            newEvolutionPokemon = evolutionPokemon[indexPath.row]
-            cell.configureCell(newEvolutionPokemon)
-            
-            return cell
-            
-        } else {
-            
-            return UICollectionViewCell()
-        }
-    }
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
     }
     
     func updatePokemonDetails() {

@@ -86,7 +86,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
         } else {
             isSearching = true
+            
             let searchText = searchBar.text!.lowercaseString
+            
             filteredPokemon = pokemon.filter({ $0.name.rangeOfString(searchText) != nil })
             collectionView.reloadData()
         }
@@ -110,6 +112,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func parsePokemonCSV() {
+        
         let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")!
         
         do {
@@ -118,9 +121,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let rows = csv.rows
             
             for row in rows {
+                
                 let id = row["id"]!
                 let name = row["identifier"]!
                 let newPokemon = Pokemon(name: name, id: id)
+                
                 pokemon.append(newPokemon)
             }
             
@@ -130,6 +135,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func initAudio() {
+        
         let path = NSBundle.mainBundle().pathForResource("music", ofType: "mp3")!
         
         do {

@@ -193,6 +193,7 @@ class Pokemon {
                     }
                 }
             }
+            
             completed()
         }
     }

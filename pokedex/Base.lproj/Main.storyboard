@@ -201,16 +201,16 @@
                                             <action selector="backButtonPressed:" destination="MSu-p9-iBo" eventType="touchUpInside" id="LDh-Jf-lho"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q5T-3R-lBf">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q5T-3R-lBf">
                                         <rect key="frame" x="202" y="20" width="196" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqm-xz-aOZ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqm-xz-aOZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="40"/>
                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2K-WA-LPl">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2K-WA-LPl">
                                                 <rect key="frame" x="69" y="0.0" width="127" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="dvI-tI-bCS"/>
@@ -238,7 +238,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="322"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YOj-8X-Ulk">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="322"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="322"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="105" id="jnF-AB-NTr"/>
                                                     <constraint firstAttribute="height" constant="105" id="vFH-dR-lrq"/>
@@ -256,70 +256,86 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OK0-Kv-kOx">
-                                                <rect key="frame" x="323" y="0.0" width="237" height="322"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="OK0-Kv-kOx">
+                                                <rect key="frame" x="402" y="0.0" width="158" height="322"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZGl-zH-UKc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="237" height="107"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="107"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHR-du-ZUu">
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="107"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="75" id="WFO-Ab-bXa"/>
-                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="nil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="uVB-Zq-uAz">
-                                                                <rect key="frame" x="83" y="0.0" width="154" height="107"/>
+                                                                <rect key="frame" x="83" y="0.0" width="20" height="107"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="83" y="0.0" width="20" height="35"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="103" height="35"/>
+                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ou5-bY-NEr">
-                                                        <rect key="frame" x="0.0" y="107" width="237" height="108"/>
+                                                        <rect key="frame" x="0.0" y="107" width="99" height="108"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Height:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSG-CB-bGR">
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="108"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="75" id="3WL-hq-0Y7"/>
-                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuf-Ur-Y0F">
-                                                                <rect key="frame" x="83" y="0.0" width="154" height="108"/>
+                                                                <rect key="frame" x="83" y="0.0" width="16" height="108"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="83" y="0.0" width="16" height="35"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="35" width="99" height="35"/>
+                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zwv-pk-7pv">
-                                                        <rect key="frame" x="0.0" y="215" width="237" height="107"/>
+                                                        <rect key="frame" x="0.0" y="215" width="99" height="107"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Weight:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3Y-Px-FsC">
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="107"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="75" id="2D1-uW-IBr"/>
-                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heO-id-iL8">
-                                                                <rect key="frame" x="83" y="0.0" width="154" height="107"/>
+                                                                <rect key="frame" x="83" y="0.0" width="16" height="107"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="83" y="0.0" width="16" height="35"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="h3Y-Px-FsC" firstAttribute="leading" secondItem="Zwv-pk-7pv" secondAttribute="leading" id="b14-bE-zHT"/>
+                                                        </constraints>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="70" width="99" height="35"/>
+                                                        </variation>
                                                     </stackView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="eHR-du-ZUu" firstAttribute="trailing" secondItem="h3Y-Px-FsC" secondAttribute="trailing" id="HES-6X-MXX"/>
+                                                    <constraint firstItem="DSG-CB-bGR" firstAttribute="trailing" secondItem="h3Y-Px-FsC" secondAttribute="trailing" id="Ot6-5C-eLM"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <constraints>
@@ -350,44 +366,74 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="51"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ABa-BF-OWF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="51"/>
+                                                        <rect key="frame" x="0.0" y="17" width="280" height="17"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HP:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4I-go-N48">
-                                                                <rect key="frame" x="0.0" y="0.0" width="37" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="37" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="37" id="1KS-c3-XRf"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="37" height="46"/>
+                                                                </variation>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ys-8D-Rhi">
-                                                                <rect key="frame" x="37" y="0.0" width="243" height="51"/>
+                                                                <rect key="frame" x="37" y="0.0" width="243" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="37" y="0.0" width="239" height="46"/>
+                                                                </variation>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="37" y="0.0" width="16" height="95"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="276" height="46"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="254" y="0.0" width="53" height="95"/>
+                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIt-XC-WMe">
-                                                        <rect key="frame" x="280" y="0.0" width="280" height="51"/>
+                                                        <rect key="frame" x="280" y="17" width="280" height="17"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speed:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKY-24-gsY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="75" id="p7v-wJ-3IN"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="46"/>
+                                                                </variation>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwl-24-SFh">
-                                                                <rect key="frame" x="75" y="0.0" width="205" height="51"/>
+                                                                <rect key="frame" x="75" y="0.0" width="205" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="75" y="0.0" width="201" height="46"/>
+                                                                </variation>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="75" y="0.0" width="16" height="95"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="284" y="0.0" width="276" height="46"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="235" y="95" width="91" height="95"/>
+                                                        </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <variation key="heightClass=compact" spacing="8"/>
@@ -397,10 +443,10 @@
                                                 <rect key="frame" x="0.0" y="51" width="560" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tfE-Tv-n87">
-                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                                        <rect key="frame" x="0.0" y="17" width="280" height="17"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eou-qv-ur1">
-                                                                <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="84" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="84" id="rQF-PL-AUH"/>
                                                                 </constraints>
@@ -409,18 +455,24 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpn-cI-8Ds">
-                                                                <rect key="frame" x="84" y="0.0" width="196" height="50"/>
+                                                                <rect key="frame" x="84" y="0.0" width="196" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="84" y="0.0" width="16" height="95"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="230" y="0.0" width="100" height="95"/>
+                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rMK-St-BBS">
-                                                        <rect key="frame" x="280" y="0.0" width="280" height="50"/>
+                                                        <rect key="frame" x="280" y="17" width="280" height="17"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Defense:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jak-MN-bYj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="99" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="99" id="EBH-XZ-Sr8"/>
                                                                 </constraints>
@@ -429,12 +481,18 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-T3-sBm">
-                                                                <rect key="frame" x="99" y="0.0" width="181" height="50"/>
+                                                                <rect key="frame" x="99" y="0.0" width="181" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="99" y="0.0" width="16" height="94"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="223" y="95" width="115" height="94"/>
+                                                        </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <variation key="heightClass=compact" spacing="8"/>
@@ -444,10 +502,10 @@
                                                 <rect key="frame" x="0.0" y="101" width="560" height="51"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yG5-sp-KR7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="51"/>
+                                                        <rect key="frame" x="0.0" y="17" width="280" height="17"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SP. Attack:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BI-2L-BNt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="124" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="124" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="124" id="ZzI-dg-vkL"/>
                                                                 </constraints>
@@ -456,18 +514,24 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sl-1Z-2km">
-                                                                <rect key="frame" x="124" y="0.0" width="156" height="51"/>
+                                                                <rect key="frame" x="124" y="0.0" width="156" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="124" y="0.0" width="16" height="95"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="210" y="0.0" width="140" height="95"/>
+                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Fc-ga-8Md">
-                                                        <rect key="frame" x="280" y="0.0" width="280" height="51"/>
+                                                        <rect key="frame" x="280" y="17" width="280" height="17"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SP. Defense:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8A-DG-yrT">
-                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="139" id="48r-Sn-rGu"/>
                                                                 </constraints>
@@ -476,12 +540,18 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVM-b6-QUT">
-                                                                <rect key="frame" x="139" y="0.0" width="141" height="51"/>
+                                                                <rect key="frame" x="139" y="0.0" width="141" height="17"/>
                                                                 <fontDescription key="fontDescription" name="PKMN-RBYGSC" family="PKMN RBYGSC" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="139" y="0.0" width="16" height="95"/>
+                                                                </variation>
                                                             </label>
                                                         </subviews>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="203" y="95" width="155" height="95"/>
+                                                        </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <variation key="heightClass=compact" spacing="8"/>

@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Constants {
-    
-}
+let URLBASE = "http://pokeapi.co/api/v2/pokemon/"
+
+typealias DownloadComplete = () -> ()

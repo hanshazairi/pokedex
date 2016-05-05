@@ -11,7 +11,8 @@ import UIKit
 class PokemonDetailsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var pokemonNameLabel: UILabel!
+    @IBOutlet weak var pokemonID: UILabel!
+    @IBOutlet weak var pokemonName: UILabel!
     @IBOutlet weak var pokemonImage: UIImageView!
     @IBOutlet weak var pokemonType: UILabel!
     @IBOutlet weak var pokemonHeight: UILabel!
@@ -29,8 +30,22 @@ class PokemonDetailsViewController: UIViewController, UICollectionViewDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pokemonNameLabel.text = pokemon.id + " " + pokemon.name.capitalizedString
+        if Int(pokemon.id) < 10 {
+            pokemonID.text = "00" + pokemon.id
+            
+        } else if Int(pokemon.id) < 100 {
+            pokemonID.text = "0" + pokemon.id
+            
+        } else {
+            pokemonID.text = pokemon.id
+        }
+        
+        pokemonName.text = pokemon.name.capitalizedString
         pokemonImage.image = UIImage(named: pokemon.id)
+        
+        pokemon.downloadPokemonDetails {
+            self.updatePokemonDetails()
+        }
         
         evolutionPokemon.append(Pokemon(name: "Charmander", id: "4"))
         evolutionPokemon.append(Pokemon(name: "Charmeleon", id: "5"))
@@ -65,6 +80,19 @@ class PokemonDetailsViewController: UIViewController, UICollectionViewDelegate, 
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+    }
+    
+    func updatePokemonDetails() {
+        
+        pokemonType.text = pokemon.type
+        pokemonHeight.text = "\(pokemon.height)"
+        pokemonWeight.text = "\(pokemon.weight)"
+        pokemonHP.text = "\(pokemon.hp)"
+        pokemonSpeed.text = "\(pokemon.speed)"
+        pokemonAttack.text = "\(pokemon.attack)"
+        pokemonDefense.text = "\(pokemon.defense)"
+        pokemonSPAttack.text = "\(pokemon.SPAttack)"
+        pokemonSPDefense.text = "\(pokemon.SPDefense)"
     }
 
     

@@ -28,10 +28,10 @@ class PokemonDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if Int(pokemon.id) < 10 {
+        if pokemon.id.characters.count < 2 {
             pokemonID.text = "00" + pokemon.id
             
-        } else if Int(pokemon.id) < 100 {
+        } else if pokemon.id.characters.count < 3 {
             pokemonID.text = "0" + pokemon.id
             
         } else {

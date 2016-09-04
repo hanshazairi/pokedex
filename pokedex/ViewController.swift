@@ -90,6 +90,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let searchText = searchBar.text!.lowercaseString
             
             filteredPokemon = pokemon.filter({ $0.name.rangeOfString(searchText) != nil })
+            print(filteredPokemon)
             collectionView.reloadData()
         }
     }
@@ -124,7 +125,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 
                 let id = row["id"]!
                 let name = row["identifier"]!
-                let newPokemon = Pokemon(name: name, id: id)
+                let attack = row["attack"]!
+                let defense = row["defense"]!
+                let stamina = row["stamina"]!
+//                let minCandy = row["mincandy"]!
+//                let maxCandy = row["maxcandy"]!
+//                let aveCandy = row["avecandy"]!
+                
+                let newPokemon = Pokemon(id: id, name: name, attack: attack, defense: defense, stamina: stamina)
                 
                 pokemon.append(newPokemon)
             }
@@ -161,4 +169,3 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
 }
-
